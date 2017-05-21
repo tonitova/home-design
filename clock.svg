@@ -1,0 +1,75 @@
+<svg id="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="450" y="130" width="100" height="100" viewBox="0 0 520 520" onload="startClock()">
+  <script type="text/javascript">
+    var minutes = null;
+    var hours = null;
+    var t = 0;
+    function startClock()
+    {
+      minutes = document.getElementById("minutes");
+      hours = document.getElementById("hours");
+      runTime();
+      setInterval("runTime()", 10);
+    }
+
+    function runTime()
+    {
+      t++;
+      minutes.setAttribute("transform", "rotate(" + (t) + ",260,260)");
+      hours.setAttribute("transform", "rotate(" + (t / 12) + ",260,260)");
+    }
+  </script>
+  <defs>
+    <filter id="dropShadow" filterUnits="userSpaceOnUse">
+      <feColorMatrix type="matrix" in="SourceAlpha" result="lightened" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0"/>
+      <feGaussianBlur in="lightened" stdDeviation="3" result="blurred"/>
+      <feMorphology operator="erode" in="blurred" radius="2" result="eroded"/>
+      <feOffset in="eroded" dx="7" dy="3" result="moved"/>
+      <feMerge>
+        <feMergeNode in="moved"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g id="clockface">
+    <circle fill="#FFFFFF" stroke="#C0C0C0" stroke-width="15" cx="260" cy="260" r="245"/>
+    <circle fill="none" stroke="#000000" cx="260" cy="260" r="225"/>
+    <g id="dial" fill="#000000" stroke="#000000">
+      <path fill="none" stroke-width="10" stroke-dasharray="1,22" d="M260,40c109.027,0,220,89.473,220,220c0,120-97.333,220-220,220 C140,480,40,380,40,260C40,136.958,142.631,40,260,40z"/>
+      <polygon id="diamond" points="260,35 263,40 260,45 257,40 "/>
+      <use id="diamond_1" xlink:href="#diamond" transform="rotate(30,260,260) "/>
+      <use id="diamond_2" xlink:href="#diamond" transform="rotate(60,260,260) "/>
+      <use id="diamond_3" xlink:href="#diamond" transform="rotate(90,260,260) "/>
+      <use id="diamond_4" xlink:href="#diamond" transform="rotate(120,260,260) "/>
+      <use id="diamond_5" xlink:href="#diamond" transform="rotate(150,260,260) "/>
+      <use id="diamond_6" xlink:href="#diamond" transform="rotate(180,260,260) "/>
+      <use id="diamond_7" xlink:href="#diamond" transform="rotate(210,260,260) "/>
+      <use id="diamond_8" xlink:href="#diamond" transform="rotate(240,260,260) "/>
+      <use id="diamond_9" xlink:href="#diamond" transform="rotate(270,260,260) "/>
+      <use id="diamond_10" xlink:href="#diamond" transform="rotate(300,260,260) "/>
+      <use id="diamond_11" xlink:href="#diamond" transform="rotate(330,260,260) "/>
+    </g>
+    <circle fill="none" stroke="#000000" cx="260" cy="260" r="215"/>
+    <circle fill="none" stroke="#000000" cx="260" cy="260" r="160"/>
+    <circle fill="none" stroke="#000000" cx="260" cy="260" r="150"/>
+      <g id="numerals" font-family="'Times New Roman', serif" font-size="72">
+        <text transform="matrix(0.393 0.2269 -0.5 0.866 336.3516 116.4619)" font-size="73.8149">I</text>
+        <text transform="matrix(0.2269 0.393 -0.866 0.5 394.9033 168.1499)" font-size="73.8149">II</text>
+        <text transform="matrix(-1.224102e-08 0.4537 -1 -1.006696e-08 423.0234 241.3164)">III</text>
+        <text transform="matrix(-0.2269 0.393 -0.866 -0.5 414.124 319.6309)" font-size="73.8149">IIII</text>
+        <text transform="matrix(-0.393 0.2269 -0.5 -0.866 351.8271 395.6152)" font-size="73.8149">V</text>
+        <text transform="matrix(-0.4537 0 0 -1 278.5029 423.2832)">VI</text>
+        <text transform="matrix(-0.393 -0.2269 0.5 -0.866 200.2769 413.9023)" font-size="73.8149">VII</text>
+        <text transform="matrix(-0.2269 -0.393 0.866 -0.5 134.856 368.9922)" font-size="73.8149">VIII</text>
+        <text transform="matrix(1.224102e-08 -0.4537 1 1.006696e-08 97.395 278.709)">IX</text>
+        <text transform="matrix(0.2269 -0.393 0.866 0.5 113.2998 189.167)" font-size="73.8149">X</text>
+        <text transform="matrix(0.393 -0.2269 0.5 0.866 162.9951 128.4893)" font-size="73.8149">XI</text>
+        <text transform="matrix(0.4537 0 0 1 235.5713 97.7969)">XII</text>
+      </g>
+    <circle fill="black" cx="260" cy="260" r="10"/>
+    <g id="hands"> 
+      <path id="hours" fill="#202020" d="M260,132.374l-18.75,30c-5.625,11.25-3.75,26.25,11.25,30v56.25  c-6.213,4.121-7.909,12.499-3.788,18.712c0.997,1.503,2.285,2.791,3.788,3.788c0,5.625-1.875,24.375-3.75,30  c7.368,1.991,15.132,1.991,22.5,0c-1.875-5.625-3.75-24.375-3.75-30c6.213-4.121,7.908-12.499,3.788-18.712  c-0.997-1.503-2.285-2.791-3.788-3.788v-56.25c15-3.75,16.875-18.75,11.25-30L260,132.374z M256.25,256.124  c2.071-2.071,5.429-2.071,7.5,0s2.071,5.429,0,7.5s-5.429,2.071-7.5,0S254.179,258.195,256.25,256.124z"/>
+      <path id="minutes" fill="#202020" d="M260,72.374l-11.25,97.5l3.75,78.75c-6.213,4.121-7.909,12.499-3.788,18.712  c0.997,1.503,2.285,2.791,3.788,3.788c0,5.625-1.875,24.375-3.75,30c7.368,1.991,15.132,1.991,22.5,0  c-1.875-5.625-3.75-24.375-3.75-30c6.213-4.121,7.908-12.499,3.788-18.712c-0.997-1.503-2.285-2.791-3.788-3.788l3.75-78.75  L260,72.374z M256.25,256.124c2.071-2.071,5.429-2.071,7.5,0s2.071,5.429,0,7.5s-5.429,2.071-7.5,0S254.179,258.195,256.25,256.124z"/>
+    </g>
+  </g>
+</svg>
