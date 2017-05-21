@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+  
+  <!-- Background -->
+  <rect x="0" y="0" fill="#005E5D" width="100%" height="75%" />
+  
+  <!-- Text using the #pattern in defs as the fill -->
+  <text x="50%" text-anchor="middle" y="25%" dy="0.4em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="10vh">Home design</text>
+  
+  <defs>  
+    <!-- Da gradient -->
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0">
+      <stop offset="0%" style="stop-color:#33235b;"/>
+      <stop offset="25%" style="stop-color:#D62229;"/>
+      <stop offset="50%" style="stop-color:#E97639;"/>
+      <stop offset="75%" style="stop-color:#792042;"/>
+      <stop offset="100%" style="stop-color:#33235b;"/>
+    </linearGradient>
+    
+    <!-- Stitch 2 gradients together for seamless animation  -->
+    <pattern id="pattern" x="0" y="0" width="300%" height="100%" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="150%" height="100%" fill="url(#gradient)">
+        <animate attributeType="XML"
+                 attributeName="x"
+                 from="0" to="150%"
+                 dur="7s"
+                 repeatCount="indefinite"/>
+      </rect>
+      <rect x="-150%" y="0" width="150%" height="100%" fill="url(#gradient)">
+        <animate attributeType="XML"
+                 attributeName="x"
+                 from="-150%" to="0"
+                 dur="7s"
+                 repeatCount="indefinite"/>
+      </rect>
+    </pattern>
+
+    <!-- Pull in font -->
+    <!-- Copied from: http://static.sonos.com/v1/fonts/logo/sonos-logo-regular-webfont.svg -->
+    <font horiz-adv-x="1024" >
+      <font-face font-family="sonos-logoregular" units-per-em="2048" ascent="1920" descent="-128" />
+      <missing-glyph horiz-adv-x="500" />
+      <glyph unicode="&#xd;" horiz-adv-x="682" />
+      <glyph unicode=" " />
+      <glyph unicode="N" horiz-adv-x="812" d="M0 412h150v636l662 -664v1000h-148v-640l-664 664v-996z" />
+      <glyph unicode="O" horiz-adv-x="1946" d="M470 896q0 210 150 364q148 148 362 148t362 -148q150 -154 150 -364q0 -212 -150 -362t-362 -150t-362 150t-150 362zM620 896q0 -152 106 -258q104 -108 256 -108q154 0 256 108q108 108 108 258q0 148 -108 260q-104 108 -256 108q-148 0 -256 -108 q-106 -110 -106 -260z" />
+      <glyph unicode="S" horiz-adv-x="674" d="M0 1124q0 -58 26 -110q28 -52 80 -90q32 -26 86 -52q68 -30 124 -46q124 -40 174 -84q34 -30 34 -74q0 -52 -48 -92q-56 -42 -138 -42q-62 0 -122 26q-38 16 -72 40l-118 -80q0 -4 24 -24q24 -24 60 -46q108 -66 228 -66q70 0 132 22q66 24 108 62q44 38 72 92 q24 54 24 110q0 54 -26 110q-28 52 -78 90q-34 28 -88 52q-38 18 -122 46q-122 36 -174 82q-36 32 -36 74q0 54 50 92q54 44 138 44q60 0 120 -26q32 -12 72 -40l120 80q-2 0 -24 24q-18 18 -62 46q-104 64 -226 64q-74 0 -132 -20t-110 -62q-48 -44 -70 -92 q-26 -56 -26 -110z" />
+      <glyph unicode="&#xa0;" />
+      <glyph unicode="&#x2000;" horiz-adv-x="704" />
+      <glyph unicode="&#x2001;" horiz-adv-x="1408" />
+      <glyph unicode="&#x2002;" horiz-adv-x="704" />
+      <glyph unicode="&#x2003;" horiz-adv-x="1408" />
+      <glyph unicode="&#x2004;" horiz-adv-x="469" />
+      <glyph unicode="&#x2005;" horiz-adv-x="352" />
+      <glyph unicode="&#x2006;" horiz-adv-x="234" />
+      <glyph unicode="&#x2007;" horiz-adv-x="234" />
+      <glyph unicode="&#x2008;" horiz-adv-x="176" />
+      <glyph unicode="&#x2009;" horiz-adv-x="281" />
+      <glyph unicode="&#x200a;" horiz-adv-x="78" />
+      <glyph unicode="&#x202f;" horiz-adv-x="281" />
+      <glyph unicode="&#x205f;" horiz-adv-x="352" />
+      <glyph unicode="&#x25fc;" horiz-adv-x="1000" d="M0 0z" />
+    </font>
+  </defs>
+</svg>
+
+<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-912 883 85.8 41.5" enable-background="new -912 883 85.8 41.5" xml:space="preserve">
+<polygon fill="#FFCE5B" points="-910.8,0 -910.7,923.6 -827.5,923.6 -827.5,0 "/>
+<rect x="-849" y="827.5" fill="#005E5D" width="11.1" height="8.2"/>
+<rect x="-910.8" y="922" fill="#AEAC9D" width="83.3" height="3.5"/>
+
+<g>
+	<path fill="#FFF3EF" d="M-894.7,890c-9.4,0-9.6,6.6-9.6,8.1v31.4h19.6v-31.4C-884.8,896.3-885.4,890-894.7,890"/>
+	<rect x="-902.3" y="900.1" fill="#AEAC9D" width="15.3" height="24.1"/>
+	<path fill="#005E5D" d="M-894.6,892c-8.1,0-7.7,6.1-7.7,6.1h15.3C-887,898.1-886.4,892-894.6,892"/>
+	<rect x="-900.3" y="902.2" fill="#005E5D" width="5.1" height="9.4"/>
+	<rect x="-894.2" y="902.2" fill="#005E5D" width="5.3" height="9.4"/>
+	<rect x="-897.7" y="918" fill="#FBF9ED" width="6.1" height="1.7"/>
+	<path fill="#FFCE5B" d="M-893.3,915.7c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3S-893.3,914.9-893.3,915.7"/>
+	</g>
+
+<path fill="#AEAC9D" d="M-835.7,888.7h-66.5c-1.2,0-2.1-1-2.1-2.1l0,0c0-1.2,1-2.1,2.1-2.1h66.6c1.2,0,2.1,1,2.1,2.1l0,0
+	C-833.6,887.7-834.5,888.7-835.7,888.7z"/>
+<circle fill="#FFF3EF" cx="-902" cy="886.5" r="1.3"/>
+<circle fill="#FFF3EF" cx="-836" cy="886.5" r="1.3"/>
+<circle fill="#FFF3EF" cx="-868.7" cy="886.5" r="1.3"/>
+<g>
+	<rect x="-878.4" y="889.7" fill="#FFF3EF" width="44.9" height="30"/>
+	<rect x="-876.3" y="892.0" fill="#005E5D" width="40.7" height="25.6"/>
+	<a xlink:href="room.html">
+	<circle fill="#FFCE5B" cx="-871" cy="907.5" r="3.1"/>
+    <circle fill="#FFF3EF" cx="-871" cy="907.5" r="2.8"/>
+	<rect x="-872.2" y="906.3" fill="#005E5D" width="2.5" height="0.6"/>
+	<polygon fill="#005E5D" points="-872.2,906.8 -869.7,906.8 -869.3,907.6 -872.6,907.6 "/>
+	<rect x="-872.2" y="908.6" fill="#005E5D" width="2" height="0.4"/>
+	<rect x="-872.2" y="906.6" fill="#005E5D" width="0.4" height="2"/>
+	<rect x="-870.6" y="906.6" fill="#005E5D" width="0.4" height="2"/>
+	<rect x="-869.9" y="907.4" fill="#005E5D" width="0.4" height="1.6"/>
+	</a>
+	<a xlink:href="room.html">
+	<circle fill="#FFCE5B" cx="-861" cy="907.5" r="3.1"/>
+	<circle fill="#FFF3EF" cx="-861" cy="907.5" r="2.8"/>
+	<rect x="-862.5" y="906.5" fill="#005E5D" width="0.2" height="1.1"/>
+	<rect x="-861.5" y="906.5" fill="#005E5D" width="0.2" height="1.1"/>
+	<rect x="-862" y="906.5" fill="#005E5D" width="0.2" height="1.1"/>
+	<rect x="-862" y="907.5" fill="#005E5D" width="0.2" height="1.5"/>
+	<rect x="-862.5" y="907.3" fill="#005E5D" width="1" height="0.3"/>
+	<polygon stroke="#005E5D" stroke-width="0.1" fill="#b3d9ff" points="-860.5,906.5 -860.5,909.1 -860.2,909.1 -860.3,908.3 -859.9,908.2 -859.9,907.7 -860.5,906.5"/>
+	</a>
+	<a xlink:href="room.html">
+	<circle fill="#FFCE5B" cx="-851" cy="907.5" r="3.1"/>
+	<circle fill="#FFF3EF" cx="-851" cy="907.5" r="2.8"/>
+	<rect x="-853" y="906" fill="#005E5D" width="4" height="3"/>
+	<polygon fill="#005E5D" points="-851,909 -851.9,909.9 -850.1,909.9 -851,909 "/>
+	<rect x="-852.5" y="906.5" fill="#FFF3EF" width="3" height="2"/>
+	<circle fill="#FFF3EF" cx="-851" cy="908.8" r="0.2"/>
+	</a>
+	<a xlink:href="room.html">
+	<circle fill="#FFCE5B" cx="-841" cy="907.5" r="3.1"/>
+	<circle fill="#FFF3EF" cx="-841" cy="907.5" r="2.8"/>
+	<circle stroke="#005E5D" stroke-width="0.2" fill="#FFF3EF" cx="-841" cy="907.5" r="1.8"/>
+	<polygon stroke="#005E5D" stroke-width="0.1" fill="#b3d9ff" points="-841.5,906.5 -842.2,907.6 -841.5,908.6 -840.3,908.6 -839.6,907.6 -840.3,906.5"/>
+	<line x1="-842.0" y1="906.1" x2="-841.5" y2="906.5" stroke="#005E5D" stroke-width="0.1" />
+	<line x1="-842.7" y1="907.5" x2="-842.2" y2="907.6" stroke="#005E5D" stroke-width="0.1" />
+	<line x1="-842.0" y1="908.9" x2="-841.5" y2="908.6" stroke="#005E5D" stroke-width="0.1" />
+	<line x1="-840.0" y1="908.9" x2="-840.3" y2="908.6" stroke="#005E5D" stroke-width="0.1" />
+	<line x1="-839.2" y1="907.4" x2="-839.6" y2="907.6" stroke="#005E5D" stroke-width="0.1" />
+	<line x1="-840.1" y1="906.0" x2="-840.3" y2="906.5" stroke="#005E5D" stroke-width="0.1" />
+	</a>
+</g>
+<g>
+	<path fill="#E63E13" d="M-876.8,899.0L-876.8,899.0c-1.4,0-2.6-1.2-2.6-2.6V889.7h5.2v6.7C-874.2,897.8-875.4,899.0-876.8,899.0z"/>
+	<path fill="#FFF3EF" d="M-871.6,899.0L-871.6,899.0c-1.4,0-2.6-1.2-2.6-2.6V889.7h5.2v6.7C-869,897.8-870.2,899.0-871.6,899.0z"/>
+	<path fill="#E63E13" d="M-866.4,899.0L-866.4,899.0c-1.4,0-2.6-1.2-2.6-2.6V889.7h5.2v6.7C-863.8,897.8-864.9,899.0-866.4,899.0z"/>
+	<path fill="#FFF3EF" d="M-861.2,899.0L-861.2,899.0c-1.4,0-2.6-1.2-2.6-2.6V889.7h5.2v6.7C-858.5,897.8-859.7,899.0-861.2,899.0z"/>
+	<path fill="#E63E13" d="M-855.9,899.0L-855.9,899.0c-1.4,0-2.6-1.2-2.6-2.6V889.7h5.2v6.7C-853.3,897.8-854.5,899.0-855.9,899.0z"/>
+	<path fill="#FFF3EF" d="M-850.7,899.0L-850.7,899.0c-1.4,0-2.6-1.2-2.6-2.6V889.7h5.2v6.7C-848.1,897.8-849.3,899.0-850.7,899.0z"/>
+	<path fill="#E63E13" d="M-845.5,899.0L-845.5,899.0c-1.4,0-2.6-1.2-2.6-2.6V889.7h5.2v6.7C-842.9,897.8-844,899.0-845.5,899.0z"/>
+	<path fill="#E63E13" d="M-835,899.0L-835,899.0c-1.4,0-2.6-1.2-2.6-2.6V889.7h5.2v6.7C-832.4,897.8-833.6,899.0-835,899.0z"/>
+	<path fill="#FFF3EF" d="M-840.3,899.0L-840.3,899.0c-1.4,0-2.6-1.2-2.6-2.6V889.7h5.2v6.7C-837.7,897.8-838.8,899.0-840.3,899.0z"/>
+</g>
+</svg>
+ <svg version="1.1" id="_x33_._Persoonlijk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5.2" height="3.1" x="-851"
+	 y="907.5" viewBox="-952 883 85.8 41.5" enable-background="new -952 883 85.8 41.5" xml:space="preserve">
+<g>
+	<path fill="#B3BDBC" d="M39.1,25.7l-18.8,4.8L6.5,0H12c2.9,0,5.5,1.6,6.9,4.1L39.1,25.7z"/>
+	<path fill="#D9E2E1" d="M17.6,2.2H1.1C0.5,2.2,0,1.7,0,1.1v0C0,0.5,0.5,0,1.1,0h10.1c0,0,6.4,0,7.5,1.1c1.1,1.1,0,0,0,0
+		C18.7,1.7,18.2,2.2,17.6,2.2z"/>
+	<path fill="#B3BDBC" d="M153.9,42.6H46.8c-9.3,0-18.3-3-25.8-8.6l0,0c-5.3-3.9-2.5-12.3,4.1-12.3h114.4c11.6,0,23.1,1.1,34.5,3.3
+		c12.9,2.5,27.3,6.3,27.3,10.6C201.3,43.4,153.9,42.6,153.9,42.6z"/>
+	<path fill="none" stroke="#FFFFFF" stroke-width="0.4128" stroke-miterlimit="10" d="M138,39.2h-2.1c-1.5,0-2.7-1.2-2.7-2.7v-9.7
+		c0-1.5,1.2-2.7,2.7-2.7h2.1c1.5,0,2.7,1.2,2.7,2.7v9.7C140.7,38,139.5,39.2,138,39.2z"/>
+	<g>
+		<path fill="#005E5D" d="M162.5,27.9l2.8,2c0.5,0.4,1.2,0.6,1.8,0.6h27.2v-0.2c-4-1.5-9.2-2.9-14.6-4.1l-16.5-0.5
+			C162,25.7,161.5,27.2,162.5,27.9z"/>
+	</g>
+	<path fill="#89A6A4" d="M58.1,36.4H34.2c-2.3,0-4.1-1.8-4.1-4.1v0c0-2.3,1.8-4.1,4.1-4.1h22.2c0.6,0,1.1,0.4,1.2,0.9l1.7,5.7
+		C59.5,35.6,58.9,36.4,58.1,36.4z"/>
+	<path fill="#D9E2E1" d="M38.2,24.4H10.1c-1,0-1.8-0.8-1.8-1.8v0c0-1,0.8-1.8,1.8-1.8h17.1c0,0,11,0,12.8,1.8s0,0,0,0
+		C40,23.6,39.2,24.4,38.2,24.4z"/>
+	<path fill="#D9E2E1" d="M127.5,38.2H65.7c-1.6,0-3-0.8-3-1.8v0c0-1,1.3-1.8,3-1.8h44.1c0,0,17.6,0,20.6,1.8v0
+		C130.4,37.4,129.1,38.2,127.5,38.2z"/>
+	<path fill="#005E5D" d="M75.5,30.5h-1.3c-0.4,0-0.7-0.3-0.7-0.7v-3.3c0-0.4,0.3-0.7,0.7-0.7h1.3c0.4,0,0.7,0.3,0.7,0.7v3.3
+		C76.2,30.2,75.9,30.5,75.5,30.5z"/>
+	<path fill="#005E5D" d="M83.8,30.5h-1.3c-0.4,0-0.7-0.3-0.7-0.7v-3.3c0-0.4,0.3-0.7,0.7-0.7h1.3c0.4,0,0.7,0.3,0.7,0.7v3.3
+		C84.5,30.2,84.2,30.5,83.8,30.5z"/>
+	<path fill="#005E5D" d="M92,30.5h-1.3c-0.4,0-0.7-0.3-0.7-0.7v-3.3c0-0.4,0.3-0.7,0.7-0.7H92c0.4,0,0.7,0.3,0.7,0.7v3.3
+		C92.7,30.2,92.4,30.5,92,30.5z"/>
+	<path fill="#005E5D" d="M100.3,30.5H99c-0.4,0-0.7-0.3-0.7-0.7v-3.3c0-0.4,0.3-0.7,0.7-0.7h1.3c0.4,0,0.7,0.3,0.7,0.7v3.3
+		C101,30.2,100.7,30.5,100.3,30.5z"/>
+	<path fill="#005E5D" d="M108.5,30.5h-1.3c-0.4,0-0.7-0.3-0.7-0.7v-3.3c0-0.4,0.3-0.7,0.7-0.7h1.3c0.4,0,0.7,0.3,0.7,0.7v3.3
+		C109.2,30.2,108.9,30.5,108.5,30.5z"/>
+	<path fill="#005E5D" d="M116.8,30.5h-1.3c-0.4,0-0.7-0.3-0.7-0.7v-3.3c0-0.4,0.3-0.7,0.7-0.7h1.3c0.4,0,0.7,0.3,0.7,0.7v3.3
+		C117.5,30.2,117.2,30.5,116.8,30.5z"/>
+	<path fill="#005E5D" d="M125,30.5h-1.3c-0.4,0-0.7-0.3-0.7-0.7v-3.3c0-0.4,0.3-0.7,0.7-0.7h1.3c0.4,0,0.7,0.3,0.7,0.7v3.3
+		C125.8,30.2,125.4,30.5,125,30.5z"/>
+	<path fill="#005E5D" d="M149.8,30.5h-1.3c-0.4,0-0.7-0.3-0.7-0.7v-3.3c0-0.4,0.3-0.7,0.7-0.7h1.3c0.4,0,0.7,0.3,0.7,0.7v3.3
+		C150.5,30.2,150.2,30.5,149.8,30.5z"/>
+	<path fill="#005E5D" d="M137.5,30.5h-1.3c-0.4,0-0.7-0.3-0.7-0.7v-3.3c0-0.4,0.3-0.7,0.7-0.7h1.3c0.4,0,0.7,0.3,0.7,0.7v3.3
+		C138.2,30.2,137.9,30.5,137.5,30.5z"/>
+</g>
+</svg>
+
+
+
+
+</body>
+</html>
