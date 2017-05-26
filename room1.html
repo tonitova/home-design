@@ -16,6 +16,63 @@ function bgChange(bg) {
     document.body.style.background = bg;
 }
 </script>
+	<style>
+
+svg{
+  width:100%;
+}
+html, body {
+  background: #333;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.svg-wrapper {
+  height: 60px;
+    margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #19f6e8;
+}
+
+.text {
+  color: #000;
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+</style>
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -40,7 +97,7 @@ function bgChange(bg) {
     <div class="w3-col m6 w3-padding-large w3-hide-small">
    
 <svg id="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-  x="450" y="130" width="300" height="300" viewBox="0 0 520 520" onload="startClock()">
+  x="450" y="130" width="280" height="280" viewBox="0 0 520 520" onload="startClock()">
   <title>Clock</title>
 
   <script type="text/javascript">
@@ -136,7 +193,7 @@ function bgChange(bg) {
     </td>
     <td onmouseover="bgChange(this.style.backgroundColor)" 
         onmouseout="bgChange('transparent')"
-        style="background-color:Silver">
+        style="background-color:Lime">
     </td>
         <td onmouseover="bgChange(this.style.backgroundColor)" 
         onmouseout="bgChange('transparent')"
@@ -144,7 +201,7 @@ function bgChange(bg) {
     </td>
     <td onmouseover="bgChange(this.style.backgroundColor)" 
         onmouseout="bgChange('transparent')"
-        style="background-color:PaleGreen">
+        style="background-color:YellowGreen">
     </td>
     <td onmouseover="bgChange(this.style.backgroundColor)" 
         onmouseout="bgChange('transparent')"
@@ -167,7 +224,12 @@ function bgChange(bg) {
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-32">
-  <p></p>
+  <p><div class="svg-wrapper">
+  <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+    <rect class="shape" height="60" width="320" />
+  </svg>
+   <div class="text">Home design
+</div></p>
 </footer>
 
 </body>
